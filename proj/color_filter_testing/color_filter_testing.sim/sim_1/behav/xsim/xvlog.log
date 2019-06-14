@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glb_clk_src_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glb_clk_src
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/frediv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module frediv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/syn_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module syn_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/sim/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test

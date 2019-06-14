@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 23 20:13:42 2019
+# Process ID: 21188
+# Current directory: C:/Users/KANG Jian/Desktop/color_filter_testing/ips/managed_ip_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21216 C:\Users\KANG Jian\Desktop\color_filter_testing\ips\managed_ip_project\managed_ip_project.xpr
+# Log file: C:/Users/KANG Jian/Desktop/color_filter_testing/ips/managed_ip_project/vivado.log
+# Journal file: C:/Users/KANG Jian/Desktop/color_filter_testing/ips/managed_ip_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/KANG Jian/Desktop/color_filter_testing/ips/managed_ip_project/managed_ip_project.xpr}
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {32.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {24} CONFIG.MMCM_CLKOUT0_DIVIDE_F {30} CONFIG.CLKOUT1_JITTER {224.705} CONFIG.CLKOUT1_PHASE_ERROR {196.976}] [get_ips glb_clk_src]
+generate_target all [get_files  {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}]
+catch { config_ip_cache -export [get_ips -all glb_clk_src] }
+export_ip_user_files -of_objects [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}] -no_script -sync -force -quiet
+reset_run glb_clk_src_synth_1
+launch_runs -jobs 16 glb_clk_src_synth_1
+export_simulation -of_objects [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}] -directory {C:/Users/KANG Jian/Desktop/color_filter_testing/ips/ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/KANG Jian/Desktop/color_filter_testing/ips/ip_user_files} -ipstatic_source_dir {C:/Users/KANG Jian/Desktop/color_filter_testing/ips/ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/KANG Jian/Desktop/color_filter_testing/ips/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=C:/Users/KANG Jian/Desktop/color_filter_testing/ips/managed_ip_project/managed_ip_project.cache/compile_simlib/questa} {riviera=C:/Users/KANG Jian/Desktop/color_filter_testing/ips/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera} {activehdl=C:/Users/KANG Jian/Desktop/color_filter_testing/ips/managed_ip_project/managed_ip_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

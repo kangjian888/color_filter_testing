@@ -1,0 +1,12 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.v,1551604448,verilog,,C:/Users/KANG Jian/Desktop/color_filter_testing/src/frediv.v,,glb_clk_src,,,../../../../../../ips/glb_clk_src,,,,,
+C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_clk_wiz.v,1551604448,verilog,,C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.v,,glb_clk_src_clk_wiz,,,../../../../../../ips/glb_clk_src,,,,,
+C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/KANG Jian/Desktop/color_filter_testing/sim/top_test.v,1551609348,verilog,,,,top_test,,,../../../../../../ips/glb_clk_src,,,,,
+C:/Users/KANG Jian/Desktop/color_filter_testing/src/frediv.v,1551611349,verilog,,C:/Users/KANG Jian/Desktop/color_filter_testing/src/reset.v,,frediv,,,../../../../../../ips/glb_clk_src,,,,,
+C:/Users/KANG Jian/Desktop/color_filter_testing/src/reset.v,1551610132,verilog,,C:/Users/KANG Jian/Desktop/color_filter_testing/src/syn_block.v,,reset,,,../../../../../../ips/glb_clk_src,,,,,
+C:/Users/KANG Jian/Desktop/color_filter_testing/src/syn_block.v,1528805072,verilog,,C:/Users/KANG Jian/Desktop/color_filter_testing/src/top.v,,syn_block,,,../../../../../../ips/glb_clk_src,,,,,
+C:/Users/KANG Jian/Desktop/color_filter_testing/src/top.v,1551617808,verilog,,C:/Users/KANG Jian/Desktop/color_filter_testing/sim/top_test.v,,top,,,../../../../../../ips/glb_clk_src,,,,,
