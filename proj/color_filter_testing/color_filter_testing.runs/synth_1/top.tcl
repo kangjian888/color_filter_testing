@@ -34,7 +34,10 @@ update_ip_catalog
 set_property ip_output_repo {c:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/frediv.v}
+  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/data_gen.v}
+  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/debounce.v}
+  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/para_to_serial.v}
+  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/prbs_any.v}
   {C:/Users/KANG Jian/Desktop/color_filter_testing/src/reset.v}
   {C:/Users/KANG Jian/Desktop/color_filter_testing/src/syn_block.v}
   {C:/Users/KANG Jian/Desktop/color_filter_testing/src/top.v}
@@ -52,11 +55,11 @@ set_property used_in_implementation false [get_files -all {{c:/Users/KANG Jian/D
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/pin_top.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/pin_top.xdc}}]
+read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc}}]
 
-read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/time_top.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/time_top.xdc}}]
+read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc}}]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

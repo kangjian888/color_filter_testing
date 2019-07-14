@@ -12,65 +12,66 @@ module top(
 	input SYSCLK_P,
 	input SYSCLK_N,
 	input G_RST,//global reset
-	input [3:0] SPEEDCTR,//four bit to decide the output speed.
+	input send_enable_button,
 	output signal_output_p,
-	output signal_output_n//generation clock singal output to test eye diagram
+	output signal_output_n
 );
 
-wire clk_i;//inner clock wire whose frequency is 100MHz
+wire clk_10mhz;//inner clock wire whose frequency is 10MHz
+wire clk_100mhz;
 wire dcm_locked;
 wire reset_sync;//high active
-wire [3:0] speedctr_i;
-wire clk_gen_i;
+wire send_enable_pulse;
+wire [9:0] data_parallel;
+wire serial_out_i;
 
-
-syn_block syn_block_0(
-	.clk(clk_i),
-	.enable(1'b1),
-	.data_in(SPEEDCTR[0]),
-	.data_out(speedctr_i[0])
-	);
-syn_block syn_block_1(
-	.clk(clk_i),
-	.enable(1'b1),
-	.data_in(SPEEDCTR[1]),
-	.data_out(speedctr_i[1])
-	);
-syn_block syn_block_2(
-	.clk(clk_i),
-	.enable(1'b1),
-	.data_in(SPEEDCTR[2]),
-	.data_out(speedctr_i[2])
-	);
-syn_block syn_block_3(
-	.clk(clk_i),
-	.enable(1'b1),
-	.data_in(SPEEDCTR[3]),
-	.data_out(speedctr_i[3])
-	);
-
- glb_clk_src glb_clk_src_inst(
-   // Clock out ports
-   .clk_out1(clk_i),     // output clk_out1
-   // Status and control signals
-   .reset(G_RST), // input reset
-   .locked(dcm_locked),       // output locked
-  // Clock in ports
-   .clk_in1_p(SYSCLK_P),    // input clk_in1_p
-   .clk_in1_n(SYSCLK_N));    // input clk_in1_n
+glb_clk_src glb_clk_src_inst(
+  // Clock out ports
+  .clk_out1(clk_10mhz),     // output clk_out1
+  .clk_out2(clk_100mhz),     // output clk_out2
+  // Status and control signals
+  .reset(G_RST), // input reset
+  .locked(dcm_locked),       // output locked
+ // Clock in ports
+  .clk_in1_p(SYSCLK_P),    // input clk_in1_p
+  .clk_in1_n(SYSCLK_N));    // input clk_in1_n
 
 reset reset_inst(
-	.clk(clk_i),
+	.clk(clk_10mhz),
 	.dcm_locked(dcm_locked),
-	.reset_sync(reset_sync)
-	);
+	.reset_sync(reset_sync));
 
-frediv frediv_inst(
-	.clk(clk_i),
+debounce #(
+	.CLK_PERIOD(100)//1000/100 = 10Mhz, this is data in this application
+)
+debounce_inst_send_enable
+(
+	.clk(clk_10mhz),
+	.key(send_enable_button),//input key signal
+	.key_pulse(send_enable_pulse)//generated pulse		
+);
+
+data_gen #
+(
+	.PRBS_LENGTH(20),//8*10bit
+	.INV_PATTERN(1),
+	.POLY_LENGHT(9),
+	.POLY_TAP(5)//these parameter decide the PRBS PATTERN
+)
+data_gen_inst
+(
+	.clk(clk_10mhz),
 	.rst(reset_sync),
-	.speedctr(speedctr_i),
-	.clk_gen(clk_gen_i) //generation clock output
-	);
+	.send_enable(send_enable_pulse), //begin to send a frame data
+	.data_out(data_parallel)
+);
+
+para_to_serial para_to_serial_inst(
+	.clk(clk_100mhz),
+	.rst(reset_sync),
+	.para_in(data_parallel),
+	.serial_out(serial_out_i)
+    );
 
 OBUFDS #( 
 .IOSTANDARD("LVDS_25") 
@@ -78,6 +79,6 @@ OBUFDS #(
 ) OBUFDS_inst ( 
 .O(signal_output_p), // 差分正端输出，直接连接到顶层模块端口 
 .OB(signal_output_n), // 差分负端输出，直接连接到顶层模块端口 
-.I(clk_gen_i) // 缓冲器输入 
+.I(serial_out_i) // 缓冲器输入 
 ); 
 endmodule

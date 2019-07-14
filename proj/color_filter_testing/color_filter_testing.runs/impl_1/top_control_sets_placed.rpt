@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jun  5 19:13:12 2019
+| Date         : Sat Jul 13 15:16:39 2019
 | Host         : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     3 |
-| Unused register locations in slices containing registers |    12 |
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    19 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,10 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            2 |
-|    16+ |            1 |
+|      5 |            1 |
+|     13 |            1 |
+|     14 |            1 |
+|    16+ |            2 |
 +--------+--------------+
 
 
@@ -45,24 +47,26 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              28 |            5 |
+| No           | No                    | No                     |              13 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               4 |            1 |
-| Yes          | No                    | No                     |               4 |            1 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+-----------------+--------------------------------+------------------+----------------+
-|           Clock Signal          |  Enable Signal  |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
-+---------------------------------+-----------------+--------------------------------+------------------+----------------+
-|  glb_clk_src_inst/inst/clk_out1 |                 | frediv_inst/counter[3]_i_1_n_0 |                1 |              4 |
-|  glb_clk_src_inst/inst/clk_out1 | reset_inst/E[0] |                                |                1 |              4 |
-|  glb_clk_src_inst/inst/clk_out1 |                 |                                |                5 |             28 |
-+---------------------------------+-----------------+--------------------------------+------------------+----------------+
++---------------------------------+----------------------------------------------+-------------------------------------------------+------------------+----------------+
+|           Clock Signal          |                 Enable Signal                |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++---------------------------------+----------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  glb_clk_src_inst/inst/clk_out1 | data_gen_inst/PRBS_GENERATE/E[0]             | reset_inst/SR[0]                                |                2 |              5 |
+|  glb_clk_src_inst/inst/clk_out1 |                                              |                                                 |                4 |             13 |
+|  glb_clk_src_inst/inst/clk_out2 |                                              | reset_inst/SR[0]                                |                4 |             14 |
+|  glb_clk_src_inst/inst/clk_out1 |                                              | debounce_inst_send_enable/p_0_in                |                4 |             18 |
+|  glb_clk_src_inst/inst/clk_out1 | data_gen_inst/PRBS_GENERATE/prbs_send_enable | data_gen_inst/PRBS_GENERATE/prbs_reg[1]_i_1_n_0 |                3 |             19 |
++---------------------------------+----------------------------------------------+-------------------------------------------------+------------------+----------------+
 
 

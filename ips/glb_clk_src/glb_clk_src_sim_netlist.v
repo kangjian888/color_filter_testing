@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Jun  5 18:55:30 2019
+// Date        : Thu Jul 11 15:49:47 2019
 // Host        : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {C:/Users/KANG
 //               Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_sim_netlist.v}
@@ -15,11 +15,13 @@
 (* NotValidForBitStream *)
 module glb_clk_src
    (clk_out1,
+    clk_out2,
     reset,
     locked,
     clk_in1_p,
     clk_in1_n);
   output clk_out1;
+  output clk_out2;
   input reset;
   output locked;
   input clk_in1_p;
@@ -28,6 +30,7 @@ module glb_clk_src
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_in1_n;
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_in1_p;
   wire clk_out1;
+  wire clk_out2;
   wire locked;
   wire reset;
 
@@ -35,6 +38,7 @@ module glb_clk_src
        (.clk_in1_n(clk_in1_n),
         .clk_in1_p(clk_in1_p),
         .clk_out1(clk_out1),
+        .clk_out2(clk_out2),
         .locked(locked),
         .reset(reset));
 endmodule
@@ -42,11 +46,13 @@ endmodule
 (* ORIG_REF_NAME = "glb_clk_src_clk_wiz" *) 
 module glb_clk_src_glb_clk_src_clk_wiz
    (clk_out1,
+    clk_out2,
     reset,
     locked,
     clk_in1_p,
     clk_in1_n);
   output clk_out1;
+  output clk_out2;
   input reset;
   output locked;
   input clk_in1_p;
@@ -57,11 +63,12 @@ module glb_clk_src_glb_clk_src_clk_wiz
   wire clk_in1_p;
   wire clk_out1;
   wire clk_out1_glb_clk_src;
+  wire clk_out2;
+  wire clk_out2_glb_clk_src;
   wire clkfbout_buf_glb_clk_src;
   wire clkfbout_glb_clk_src;
   wire locked;
   wire reset;
-  wire NLW_plle2_adv_inst_CLKOUT1_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT2_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED;
@@ -88,16 +95,20 @@ module glb_clk_src_glb_clk_src_clk_wiz
        (.I(clk_out1_glb_clk_src),
         .O(clk_out1));
   (* BOX_TYPE = "PRIMITIVE" *) 
+  BUFG clkout2_buf
+       (.I(clk_out2_glb_clk_src),
+        .O(clk_out2));
+  (* BOX_TYPE = "PRIMITIVE" *) 
   PLLE2_ADV #(
-    .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT(32),
+    .BANDWIDTH("HIGH"),
+    .CLKFBOUT_MULT(6),
     .CLKFBOUT_PHASE(0.000000),
     .CLKIN1_PERIOD(5.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE(5),
+    .CLKOUT0_DIVIDE(120),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
-    .CLKOUT1_DIVIDE(1),
+    .CLKOUT1_DIVIDE(12),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT2_DIVIDE(1),
@@ -113,7 +124,7 @@ module glb_clk_src_glb_clk_src_clk_wiz
     .CLKOUT5_DUTY_CYCLE(0.500000),
     .CLKOUT5_PHASE(0.000000),
     .COMPENSATION("ZHOLD"),
-    .DIVCLK_DIVIDE(5),
+    .DIVCLK_DIVIDE(1),
     .IS_CLKINSEL_INVERTED(1'b0),
     .IS_PWRDWN_INVERTED(1'b0),
     .IS_RST_INVERTED(1'b0),
@@ -127,7 +138,7 @@ module glb_clk_src_glb_clk_src_clk_wiz
         .CLKIN2(1'b0),
         .CLKINSEL(1'b1),
         .CLKOUT0(clk_out1_glb_clk_src),
-        .CLKOUT1(NLW_plle2_adv_inst_CLKOUT1_UNCONNECTED),
+        .CLKOUT1(clk_out2_glb_clk_src),
         .CLKOUT2(NLW_plle2_adv_inst_CLKOUT2_UNCONNECTED),
         .CLKOUT3(NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED),
         .CLKOUT4(NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED),
