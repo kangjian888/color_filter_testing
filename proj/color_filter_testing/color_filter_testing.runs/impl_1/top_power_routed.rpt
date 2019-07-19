@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sat Jul 13 15:18:07 2019
+| Date             : Fri Jul 19 21:12:25 2019
 | Host             : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.299        |
+| Total On-Chip Power (W)  | 0.259        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.164        |
+| Dynamic (W)              | 0.124        |
 | Device Static (W)        | 0.135        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 84.4         |
-| Junction Temperature (C) | 25.6         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -58,11 +58,11 @@ Table of Contents
 |   Register     |    <0.001 |       69 |    267600 |            0.03 |
 |   CARRY4       |    <0.001 |        5 |     33450 |            0.01 |
 |   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    <0.001 |      108 |       --- |             --- |
+| Signals        |    <0.001 |      106 |       --- |             --- |
 | PLL            |     0.119 |        1 |        10 |           10.00 |
-| I/O            |     0.044 |        6 |       400 |            1.50 |
+| I/O            |     0.003 |        5 |       400 |            1.25 |
 | Static Power   |     0.135 |          |           |                 |
-| Total          |     0.299 |          |           |                 |
+| Total          |     0.259 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 | Vccint    |       1.000 |     0.044 |       0.014 |      0.030 |
 | Vccaux    |       1.800 |     0.092 |       0.061 |      0.031 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
-| Vcco25    |       2.500 |     0.021 |       0.016 |      0.005 |
+| Vcco25    |       2.500 |     0.005 |       0.000 |      0.005 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
@@ -144,7 +144,7 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| top                |     0.164 |
+| top                |     0.124 |
 |   glb_clk_src_inst |     0.122 |
 |     inst           |     0.122 |
 +--------------------+-----------+

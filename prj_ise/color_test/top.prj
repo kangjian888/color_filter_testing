@@ -1,0 +1,8 @@
+verilog work "ipcore_dir/glb_clk_src.v"
+verilog work "../../src_ISE/syn_block.v"
+verilog work "../../src_ISE/prbs_any.v"
+verilog work "../../src_ISE/reset.v"
+verilog work "../../src_ISE/para_to_serial.v"
+verilog work "../../src_ISE/debounce.v"
+verilog work "../../src_ISE/data_gen.v"
+verilog work "../../src_ISE/top.v"

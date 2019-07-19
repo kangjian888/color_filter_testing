@@ -1,0 +1,85 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jul 19 21:33:25 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "signal_output" LOCATE = SITE "K16" LEVEL 1;
+COMP "G_RST" LOCATE = SITE "L3" LEVEL 1;
+COMP "send_enable_button" LOCATE = SITE "C3" LEVEL 1;
+COMP "SYSCLK_IN" LOCATE = SITE "T8" LEVEL 1;
+TIMEGRP glb_clk_src_inst_clkout0 = BEL "reset_inst/dcm_locked_sync_pre" BEL
+        "reset_inst/syn_block_0/data_sync_reg4" BEL
+        "reset_inst/syn_block_0/data_sync_reg3" BEL
+        "reset_inst/syn_block_0/data_sync_reg2" BEL
+        "reset_inst/syn_block_0/data_sync_reg1" BEL
+        "reset_inst/syn_block_0/data_sync_reg0" BEL
+        "glb_clk_src_inst/clkout1_buf" BEL
+        "debounce_inst_send_enable/key_rst_pre" BEL
+        "debounce_inst_send_enable/key_rst" BEL
+        "data_gen_inst/state_reg_FSM_FFd2" BEL
+        "data_gen_inst/state_reg_FSM_FFd1" BEL "reset_inst/reset_sync" BEL
+        "debounce_inst_send_enable/counter_on" BEL
+        "debounce_inst_send_enable/key_sec" BEL
+        "debounce_inst_send_enable/counter_0" BEL
+        "data_gen_inst/counter_reg_3" BEL "data_gen_inst/counter_reg_2" BEL
+        "data_gen_inst/counter_reg_1" BEL "data_gen_inst/counter_reg_0" BEL
+        "data_gen_inst/counter_reg_4" BEL
+        "debounce_inst_send_enable/counter_17" BEL
+        "debounce_inst_send_enable/counter_16" BEL
+        "debounce_inst_send_enable/counter_15" BEL
+        "debounce_inst_send_enable/counter_14" BEL
+        "debounce_inst_send_enable/counter_13" BEL
+        "debounce_inst_send_enable/counter_12" BEL
+        "debounce_inst_send_enable/counter_10" BEL
+        "debounce_inst_send_enable/counter_9" BEL
+        "debounce_inst_send_enable/counter_11" BEL
+        "debounce_inst_send_enable/counter_8" BEL
+        "debounce_inst_send_enable/counter_7" BEL
+        "debounce_inst_send_enable/counter_5" BEL
+        "debounce_inst_send_enable/counter_4" BEL
+        "debounce_inst_send_enable/counter_6" BEL
+        "debounce_inst_send_enable/counter_3" BEL
+        "debounce_inst_send_enable/counter_2" BEL
+        "debounce_inst_send_enable/counter_1" BEL
+        "data_gen_inst/state_reg_FSM_FFd2_1" BEL
+        "data_gen_inst/state_reg_FSM_FFd1_1" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_9" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_8" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_7" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_6" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_5" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_4" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_3" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_2" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_1" BEL
+        "data_gen_inst/PRBS_GENERATE/DATA_OUT_0" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_1" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_2" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_3" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_4" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_5" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_6" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_7" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_8" BEL
+        "data_gen_inst/PRBS_GENERATE/prbs_reg_9";
+TIMEGRP glb_clk_src_inst_clkout1 = BEL "glb_clk_src_inst/clkout2_buf" BEL
+        "para_to_serial_inst/para_reg_9" BEL "para_to_serial_inst/para_reg_8"
+        BEL "para_to_serial_inst/para_reg_7" BEL
+        "para_to_serial_inst/para_reg_6" BEL "para_to_serial_inst/para_reg_5"
+        BEL "para_to_serial_inst/para_reg_4" BEL
+        "para_to_serial_inst/para_reg_3" BEL "para_to_serial_inst/para_reg_2"
+        BEL "para_to_serial_inst/para_reg_1" BEL
+        "para_to_serial_inst/para_reg_0" BEL "para_to_serial_inst/counter_2"
+        BEL "para_to_serial_inst/counter_1" BEL
+        "para_to_serial_inst/counter_3" BEL "para_to_serial_inst/counter_0";
+PIN glb_clk_src_inst/pll_base_inst/PLL_ADV_pins<2> = BEL
+        "glb_clk_src_inst/pll_base_inst/PLL_ADV" PINNAME CLKIN1;
+TIMEGRP sys_clk_pin = BEL "glb_clk_src_inst/clkin1_buf" PIN
+        "glb_clk_src_inst/pll_base_inst/PLL_ADV_pins<2>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+TS_glb_clk_src_inst_clkout0 = PERIOD TIMEGRP "glb_clk_src_inst_clkout0"
+        TS_sys_clk_pin * 0.2 HIGH 50%;
+TS_glb_clk_src_inst_clkout1 = PERIOD TIMEGRP "glb_clk_src_inst_clkout1"
+        TS_sys_clk_pin * 2 HIGH 50%;
+SCHEMATIC END;
+

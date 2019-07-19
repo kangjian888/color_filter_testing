@@ -138,7 +138,7 @@
         </FileInfo>
       </File>
       <Config>
-        <Option Name="TargetConstrsFile" Val="$PPRDIR/../../cons/top_time.xdc"/>
+        <Option Name="TargetConstrsFile" Val="$PPRDIR/../../cons/top_io.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>

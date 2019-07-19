@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\KANG Jian\Desktop\color_filter_testing\prj_ise\color_test\top.ncd
+OUTFILE=C:\Users\KANG Jian\Desktop\color_filter_testing\prj_ise\color_test\top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2ftg256
+WORKINGDIR=C:\Users\KANG Jian\Desktop\color_filter_testing\prj_ise\color_test
+LICENSE=WebPack
+USER_INFO=_
