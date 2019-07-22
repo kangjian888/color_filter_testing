@@ -30,7 +30,7 @@ SEND_PRBS = 2,
 SEND_TAIL = 3;
 
 reg [2:0] state_reg, state_next;
-reg [4:0] counter_reg, counter_next;//the max length is 32
+reg [10:0] counter_reg, counter_next;//the max length is 
 reg prbs_send_enable = 1'b0;
 reg prbs_send_reset = 1'b1;
 wire [9:0] prbs_data_wire;

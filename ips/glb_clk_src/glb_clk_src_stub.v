@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Thu Jul 11 15:49:47 2019
+// Date        : Thu Jul 11 15:49:46 2019
 // Host        : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub {C:/Users/KANG
-//               Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_stub.v}
+// Command     : write_verilog -force -mode synth_stub -rename_top glb_clk_src -prefix
+//               glb_clk_src_ glb_clk_src_stub.v
 // Design      : glb_clk_src
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a200tfbg676-2

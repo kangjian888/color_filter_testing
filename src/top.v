@@ -56,7 +56,7 @@ debounce_inst_send_enable
 
 data_gen #
 (
-	.PRBS_LENGTH(20),//8*10bit
+	.PRBS_LENGTH(2000),
 	.INV_PATTERN(1),
 	.POLY_LENGHT(9),
 	.POLY_TAP(5)//these parameter decide the PRBS PATTERN
