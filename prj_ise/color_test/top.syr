@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: top.prj
 
@@ -380,9 +380,9 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 145
+# BELS                             : 147
 #      GND                         : 1
-#      INV                         : 1
+#      INV                         : 3
 #      LUT1                        : 17
 #      LUT2                        : 4
 #      LUT3                        : 1
@@ -398,10 +398,10 @@ Primitive and Black Box Usage:
 #      FDRE                        : 5
 # Clock Buffers                    : 4
 #      BUFG                        : 4
-# IO Buffers                       : 4
+# IO Buffers                       : 5
 #      IBUF                        : 2
 #      IBUFG                       : 1
-#      OBUF                        : 1
+#      OBUF                        : 2
 # Others                           : 1
 #      PLL_ADV                     : 1
 
@@ -413,19 +413,19 @@ Selected Device : 6slx9ftg256-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:              71  out of  11440     0%  
- Number of Slice LUTs:                  108  out of   5720     1%  
-    Number used as Logic:               108  out of   5720     1%  
+ Number of Slice LUTs:                  110  out of   5720     1%  
+    Number used as Logic:               110  out of   5720     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    118
-   Number with an unused Flip Flop:      47  out of    118    39%  
-   Number with an unused LUT:            10  out of    118     8%  
-   Number of fully used LUT-FF pairs:    61  out of    118    51%  
+ Number of LUT Flip Flop pairs used:    119
+   Number with an unused Flip Flop:      48  out of    119    40%  
+   Number with an unused LUT:             9  out of    119     7%  
+   Number of fully used LUT-FF pairs:    62  out of    119    52%  
    Number of unique control sets:         5
 
 IO Utilization: 
- Number of IOs:                           4
- Number of bonded IOBs:                   4  out of    186     2%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    186     2%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
@@ -465,7 +465,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 4.069ns (Maximum Frequency: 245.761MHz)
-   Minimum input arrival time before clock: 2.658ns
+   Minimum input arrival time before clock: 3.063ns
    Maximum output required time after clock: 4.118ns
    Maximum combinational path delay: No path found
 
@@ -523,21 +523,21 @@ Delay:               3.157ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'glb_clk_src_inst/pll_base_inst/CLKOUT0'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              2.658ns (Levels of Logic = 2)
+Offset:              3.063ns (Levels of Logic = 2)
   Source:            send_enable_button (PAD)
-  Destination:       debounce_inst_send_enable/key_sec (FF)
+  Destination:       debounce_inst_send_enable/key_rst (FF)
   Destination Clock: glb_clk_src_inst/pll_base_inst/CLKOUT0 rising
 
-  Data Path: send_enable_button to debounce_inst_send_enable/key_sec
+  Data Path: send_enable_button to debounce_inst_send_enable/key_rst
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.328   1.002  send_enable_button_IBUF (send_enable_button_IBUF)
-     LUT4:I0->O            1   0.254   0.000  debounce_inst_send_enable/key_sec_rstpot (debounce_inst_send_enable/key_sec_rstpot)
-     FD:D                      0.074          debounce_inst_send_enable/key_sec
+     IBUF:I->O             2   1.328   0.725  send_enable_button_IBUF (send_enable_button_IBUF)
+     INV:I->O              1   0.255   0.681  send_enable_button_INV_5_o1_INV_0 (send_enable_button_INV_5_o)
+     FD:D                      0.074          debounce_inst_send_enable/key_rst
     ----------------------------------------
-    Total                      2.658ns (1.656ns logic, 1.002ns route)
-                                       (62.3% logic, 37.7% route)
+    Total                      3.063ns (1.657ns logic, 1.406ns route)
+                                       (54.1% logic, 45.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'glb_clk_src_inst/pll_base_inst/CLKOUT1'
@@ -584,7 +584,7 @@ glb_clk_src_inst/pll_base_inst/CLKOUT1|    3.157|         |         |         |
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.09 secs
+Total CPU time to Xst completion: 5.70 secs
  
 --> 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Jul 19 21:10:54 2019
+| Date         : Mon Jul 22 17:27:13 2019
 | Host         : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -49,7 +49,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              13 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              32 |            8 |
+| No           | Yes                   | No                     |              32 |            9 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              24 |            5 |
@@ -62,11 +62,11 @@ Table of Contents
 +---------------------------------+----------------------------------------------+-------------------------------------------------+------------------+----------------+
 |           Clock Signal          |                 Enable Signal                |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
 +---------------------------------+----------------------------------------------+-------------------------------------------------+------------------+----------------+
-|  glb_clk_src_inst/inst/clk_out1 | data_gen_inst/PRBS_GENERATE/E[0]             | reset_inst/SR[0]                                |                1 |              5 |
+|  glb_clk_src_inst/inst/clk_out1 | data_gen_inst/PRBS_GENERATE/E[0]             | reset_inst/SR[0]                                |                2 |              5 |
 |  glb_clk_src_inst/inst/clk_out1 |                                              |                                                 |                4 |             13 |
-|  glb_clk_src_inst/inst/clk_out2 |                                              | reset_inst/SR[0]                                |                4 |             14 |
+|  glb_clk_src_inst/inst/clk_out2 |                                              | reset_inst/SR[0]                                |                5 |             14 |
 |  glb_clk_src_inst/inst/clk_out1 |                                              | debounce_inst_send_enable/p_0_in                |                4 |             18 |
-|  glb_clk_src_inst/inst/clk_out1 | data_gen_inst/PRBS_GENERATE/prbs_send_enable | data_gen_inst/PRBS_GENERATE/prbs_reg[1]_i_1_n_0 |                4 |             19 |
+|  glb_clk_src_inst/inst/clk_out1 | data_gen_inst/PRBS_GENERATE/prbs_send_enable | data_gen_inst/PRBS_GENERATE/prbs_reg[1]_i_1_n_0 |                3 |             19 |
 +---------------------------------+----------------------------------------------+-------------------------------------------------+------------------+----------------+
 
 

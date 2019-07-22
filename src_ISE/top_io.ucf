@@ -5,5 +5,5 @@ NET G_RST LOC = L3 | IOSTANDARD = "LVCMOS33";
 
 NET signal_output LOC = K16 | IOSTANDARD = "LVCMOS33";  ## J2-PIN3
 NET send_enable_button  LOC = C3 | IOSTANDARD = "LVCMOS33";       ## KEY1
-
+NET led_test  LOC = P4 | IOSTANDARD = "LVCMOS33";       ## KEY1
 

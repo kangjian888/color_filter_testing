@@ -12,6 +12,7 @@ module top(
 	input SYSCLK_IN,
 	input G_RST,//global reset
 	input send_enable_button,
+	output led_test,
 	output signal_output
 	//output signal_output_p,
 	//output signal_output_n
@@ -32,7 +33,7 @@ glb_clk_src glb_clk_src_inst
   .CLK_OUT1(clk_10mhz),
   .CLK_OUT2(clk_100mhz),
   // Status and control signals
-  .RESET(G_RST),
+  .RESET(~G_RST),
   .LOCKED(dcm_locked)
  );
 
@@ -47,7 +48,7 @@ debounce #(
 debounce_inst_send_enable
 (
 	.clk(clk_10mhz),
-	.key(send_enable_button),//input key signal
+	.key(~send_enable_button),//input key signal
 	.key_pulse(send_enable_pulse)//generated pulse		
 );
 
@@ -74,6 +75,7 @@ para_to_serial para_to_serial_inst(
     );
 
 assign signal_output = serial_out_i;
+assign led_test = 1'b1;
 //OBUFDS #( 
 //.IOSTANDARD("LVDS_25") 
 //// 指名输出端口的电平标�

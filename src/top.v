@@ -13,6 +13,7 @@ module top(
 	input SYSCLK_P,
 	input G_RST,//global reset
 	input send_enable_button,
+	output voltage_test,
 	output signal_output
 	//output signal_output_p,
 	//output signal_output_n
@@ -76,6 +77,7 @@ para_to_serial para_to_serial_inst(
     );
 
 assign signal_output = serial_out_i;
+assign voltage_test = 1'b1;
 //OBUFDS #( 
 //.IOSTANDARD("LVDS_25") 
 //// 指名输出端口的电平标�

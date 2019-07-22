@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jul 19 21:33:34 2019
+Mon Jul 22 14:26:00 2019
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -217,10 +217,10 @@ N3||IOBM|IO_L34P_M3UDQS_3|UNUSED||3|||||||||
 N4||IOBS|IO_L2N_3|UNUSED||3|||||||||
 N5||IOBM|IO_L49P_D3_2|UNUSED||2|||||||||
 N6||IOBS|IO_L64N_D9_2|UNUSED||2|||||||||
-N7|||VCCO_2|||2|||||any******||||
+N7|||VCCO_2|||2|||||3.30||||
 N8||IOBS|IO_L29N_GCLK2_2|UNUSED||2|||||||||
 N9||IOBM|IO_L14P_D11_2|UNUSED||2|||||||||
-N10|||VCCO_2|||2|||||any******||||
+N10|||VCCO_2|||2|||||3.30||||
 N11||IOBM|IO_L13P_M1_2|UNUSED||2|||||||||
 N12||IOBM|IO_L12P_D1_MISO2_2|UNUSED||2|||||||||
 N13|||GND||||||||||||
@@ -230,7 +230,7 @@ N16||IOBS|IO_L45N_A0_M1LDQSN_1|UNUSED||1|||||||||
 P1||IOBS|IO_L33N_M3DQ13_3|UNUSED||3|||||||||
 P2||IOBM|IO_L33P_M3DQ12_3|UNUSED||3|||||||||
 P3|||GND||||||||||||
-P4||IOBM|IO_L63P_2|UNUSED||2|||||||||
+P4|led_test|IOB|IO_L63P_2|OUTPUT|LVCMOS33|2|12|SLOW||||LOCATED|NO|NONE|
 P5||IOBS|IO_L49N_D4_2|UNUSED||2|||||||||
 P6||IOBM|IO_L47P_2|UNUSED||2|||||||||
 P7||IOBM|IO_L31P_GCLK31_D14_2|UNUSED||2|||||||||
@@ -246,11 +246,11 @@ P16||IOBS|IO_L48N_M1DQ9_1|UNUSED||1|||||||||
 R1||IOBS|IO_L32N_M3DQ15_3|UNUSED||3|||||||||
 R2||IOBM|IO_L32P_M3DQ14_3|UNUSED||3|||||||||
 R3||IOBM|IO_L65P_INIT_B_2|UNUSED||2|||||||||
-R4|||VCCO_2|||2|||||any******||||
+R4|||VCCO_2|||2|||||3.30||||
 R5||IOBM|IO_L48P_D7_2|UNUSED||2|||||||||
 R6|||GND||||||||||||
 R7||IOBM|IO_L32P_GCLK29_2|UNUSED||2|||||||||
-R8|||VCCO_2|||2|||||any******||||
+R8|||VCCO_2|||2|||||3.30||||
 R9||IOBM|IO_L23P_2|UNUSED||2|||||||||
 R10|||GND||||||||||||
 R11||IOBM|IO_L1P_CCLK_2|UNUSED||2|||||||||

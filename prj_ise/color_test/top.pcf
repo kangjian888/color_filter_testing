@@ -1,8 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Jul 19 21:33:25 2019
+// Written by: Map P.20131013 on Mon Jul 22 14:25:51 2019
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "led_test" LOCATE = SITE "P4" LEVEL 1;
 COMP "signal_output" LOCATE = SITE "K16" LEVEL 1;
 COMP "G_RST" LOCATE = SITE "L3" LEVEL 1;
 COMP "send_enable_button" LOCATE = SITE "C3" LEVEL 1;
