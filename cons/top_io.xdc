@@ -17,7 +17,7 @@ set_property IOSTANDARD SSTL15 [get_ports send_enable_button]
 #set_property PACKAGE_PIN T7 [get_ports signal_output_n]
 #set_property IOSTANDARD LVDS_25 [get_ports signal_output_n]
 
-set_property IOSTANDARD LVCMOS25 [get_ports signal_output]
+set_property IOSTANDARD LVCMOS33 [get_ports signal_output]
 set_property PACKAGE_PIN T8 [get_ports signal_output]
 
 set_property PACKAGE_PIN P26 [get_ports voltage_test]
@@ -27,4 +27,7 @@ set_property SLEW FAST [get_ports signal_output]
 set_property SLEW FAST [get_ports voltage_test]
 set_property DRIVE 16 [get_ports voltage_test]
 
-set_property OFFCHIP_TERM NONE [get_ports signal_output]
+
+set_property DRIVE 16 [get_ports signal_output]
+set_property OFFCHIP_TERM NONE [get_ports voltage_test]
+set_property PULLDOWN true [get_ports signal_output]

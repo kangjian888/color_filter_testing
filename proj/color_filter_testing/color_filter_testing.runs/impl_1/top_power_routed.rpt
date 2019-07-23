@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Jul 23 15:38:33 2019
+| Date             : Tue Jul 23 16:00:23 2019
 | Host             : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.258        |
+| Total On-Chip Power (W)  | 0.263        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.124        |
-| Device Static (W)        | 0.135        |
+| Device Static (W)        | 0.139        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 84.5         |
 | Junction Temperature (C) | 25.5         |
@@ -60,9 +60,9 @@ Table of Contents
 |   Others       |     0.000 |       11 |       --- |             --- |
 | Signals        |    <0.001 |      114 |       --- |             --- |
 | PLL            |     0.119 |        1 |        10 |           10.00 |
-| I/O            |     0.003 |        6 |       400 |            1.50 |
-| Static Power   |     0.135 |          |           |                 |
-| Total          |     0.258 |          |           |                 |
+| I/O            |     0.004 |        6 |       400 |            1.50 |
+| Static Power   |     0.139 |          |           |                 |
+| Total          |     0.263 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,8 +74,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.044 |       0.014 |      0.030 |
 | Vccaux    |       1.800 |     0.092 |       0.061 |      0.031 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
-| Vcco25    |       2.500 |     0.005 |       0.000 |      0.005 |
+| Vcco33    |       3.300 |     0.005 |       0.000 |      0.005 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
