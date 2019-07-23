@@ -22,3 +22,8 @@ set_property PACKAGE_PIN T8 [get_ports signal_output]
 
 set_property PACKAGE_PIN P26 [get_ports voltage_test]
 set_property IOSTANDARD LVCMOS33 [get_ports voltage_test]
+
+set_property OFFCHIP_TERM NONE [get_ports voltage_test]
+set_property SLEW FAST [get_ports signal_output]
+set_property SLEW FAST [get_ports voltage_test]
+set_property DRIVE 16 [get_ports voltage_test]

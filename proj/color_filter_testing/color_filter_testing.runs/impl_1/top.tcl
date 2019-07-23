@@ -65,7 +65,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
+  set_param general.maxThreads 16
   open_checkpoint top_routed.dcp
   set_property webtalk.parent_dir {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/wt} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
