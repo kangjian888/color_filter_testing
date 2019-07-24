@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Jul 22 17:22:53 2019
-# Process ID: 10716
+# Start of session at: Wed Jul 24 15:59:05 2019
+# Process ID: 22776
 # Current directory: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16624 C:\Users\KANG Jian\Desktop\color_filter_testing\proj\color_filter_testing\color_filter_testing.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13448 C:\Users\KANG Jian\Desktop\color_filter_testing\proj\color_filter_testing\color_filter_testing.xpr
 # Log file: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/vivado.log
 # Journal file: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing\vivado.jou
 #-----------------------------------------------------------
@@ -18,171 +18,7 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'v:/vivado/Arm_ipi_repository'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx2018.3/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 694.305 ; gain = 88.816
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 697.941 ; gain = 54.477
 update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci' is already up-to-date
-[Mon Jul 22 17:25:40 2019] Launched synth_1...
-Run output will be captured here: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/synth_1/runme.log
-[Mon Jul 22 17:25:40 2019] Launched impl_1...
-Run output will be captured here: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/runme.log
-open_hw
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2018.3
-  **** Build date : Dec  7 2018-00:40:27
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
-
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
-set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
-current_hw_device [get_hw_devices xc7a200t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-create_hw_cfgmem -hw_device [get_hw_devices xc7a200t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql256-spi-x1_x2_x4}] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
-program_hw_devices [get_hw_devices xc7a200t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1717.602 ; gain = 0.105
-refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
-INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
-INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
-set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-set_property PROGRAM.FILES [list "C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-startgroup 
-create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a200t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0];
-INFO: [Labtools 27-3164] End of startup status: HIGH
-INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
-program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
-Mfg ID : 20   Memory Type : ba   Memory Capacity : 19   Device ID 1 : 0   Device ID 2 : 0
-Performing Erase Operation...
-Erase Operation successful.
-Performing Program and Verify Operations...
-Program/Verify Operation successful.
-INFO: [Labtoolstcl 44-377] Flash programming completed successfully
-program_hw_cfgmem: Time (s): cpu = 00:00:06 ; elapsed = 00:05:05 . Memory (MB): peak = 1745.809 ; gain = 7.027
-endgroup
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
-close_hw
-export_ip_user_files -of_objects  [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}] -no_script -reset -force -quiet
-remove_files  {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}
-add_files -norecurse {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}
-WARNING: [IP_Flow 19-3664] IP 'glb_clk_src' generated file not found 'c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'glb_clk_src' generated file not found 'c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'glb_clk_src' generated file not found 'c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'glb_clk_src' generated file not found 'c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'glb_clk_src' generated file not found 'c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_sim_netlist.vhdl'. Please regenerate to continue.
-export_ip_user_files -of_objects  [get_files  {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}] -lib_map_path [list {modelsim=C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/compile_simlib/modelsim} {questa=C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/compile_simlib/questa} {riviera=C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/compile_simlib/riviera} {activehdl=C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/compile_simlib/activehdl}] -force -quiet
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}] -no_script -reset -force -quiet
-remove_files  {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}
-add_files -norecurse {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}
-export_ip_user_files -of_objects  [get_files  {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}] -lib_map_path [list {modelsim=C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/compile_simlib/modelsim} {questa=C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/compile_simlib/questa} {riviera=C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/compile_simlib/riviera} {activehdl=C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/compile_simlib/activehdl}] -force -quiet
-update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/synth_1
-
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci' is already up-to-date
-[Mon Jul 22 18:32:34 2019] Launched synth_1...
-Run output will be captured here: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/synth_1/runme.log
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a200tfbg676-2
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.dcp' for cell 'glb_clk_src_inst'
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.3
-INFO: [Device 21-403] Loading part xc7a200tfbg676-2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_board.xdc] for cell 'glb_clk_src_inst/inst'
-Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_board.xdc] for cell 'glb_clk_src_inst/inst'
-Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc] for cell 'glb_clk_src_inst/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc:57]
-get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2718.813 ; gain = 589.941
-Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc] for cell 'glb_clk_src_inst/inst'
-Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc]
-Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc]
-Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc]
-Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2718.813 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:37 . Memory (MB): peak = 2844.750 ; gain = 1054.105
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/synth_1
-
-launch_runs synth_1 -jobs 16
-INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci' is already up-to-date
-[Mon Jul 22 18:36:06 2019] Launched synth_1...
-Run output will be captured here: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/synth_1/runme.log
-close_design
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a200tfbg676-2
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.dcp' for cell 'glb_clk_src_inst'
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.3
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_board.xdc] for cell 'glb_clk_src_inst/inst'
-Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_board.xdc] for cell 'glb_clk_src_inst/inst'
-Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc] for cell 'glb_clk_src_inst/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc:57]
-Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc] for cell 'glb_clk_src_inst/inst'
-Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc]
-Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc]
-Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc]
-Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2863.879 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-launch_runs impl_1 -jobs 16
-INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci' is already up-to-date
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2863.879 ; gain = 0.000
-INFO: [Timing 38-480] Writing timing data to binary archive.
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2863.879 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2863.879 ; gain = 0.000
-[Mon Jul 22 18:37:40 2019] Launched impl_1...
-Run output will be captured here: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci' is already up-to-date
-[Mon Jul 22 18:42:31 2019] Launched impl_1...
-Run output will be captured here: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/runme.log
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 22 18:43:51 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 24 16:05:17 2019...
