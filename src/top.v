@@ -13,25 +13,27 @@ module top(
 	input SYSCLK_P,
 	input G_RST,//global reset
 	input send_enable_button,
-	output voltage_test,
 	output signal_output
 	//output signal_output_p,
 	//output signal_output_n
 );
 
-wire clk_10mhz;//inner clock wire whose frequency is 10MHz
-wire clk_100mhz;
+wire clk_fast;//inner clock wire whose frequency is 10MHz
+wire clk_slow;
 wire dcm_locked;
-wire reset_sync;//high active
+wire slow_rst;//high active
+wire reset_sync;
 wire send_enable_pulse;
 wire [9:0] data_parallel;
 wire serial_out_i;
+reg [3:0] freq_divder_i;
+
+
 
 glb_clk_src glb_clk_src_inst
  (
   // Clock out ports
-  .clk_out1(clk_10mhz),     // output clk_out1
-  .clk_out2(clk_100mhz),     // output clk_out2
+  .clk_out1(clk_fast),     // output clk_out1
   // Status and control signals
   .reset(G_RST), // input reset
   .locked(dcm_locked),       // output locked
@@ -39,45 +41,59 @@ glb_clk_src glb_clk_src_inst
   .clk_in1_p(SYSCLK_P),    // input clk_in1_p
   .clk_in1_n(SYSCLK_N));    // input clk_in1_n
 
+
 reset reset_inst(
-	.clk(clk_10mhz),
+	.clk(clk_fast),
 	.dcm_locked(dcm_locked),
-	.reset_sync(reset_sync));
+	.reset_sync(reset_sync),
+	.slow_rst(slow_rst)
+);
+
+
+divider_even#(
+    .N(10)
+)
+divider_even_inst
+(
+    .clk(clk_fast),
+    .rst(reset_sync),
+    .clk_div_even(clk_slow)
+);
+
 
 debounce #(
-	.CLK_PERIOD(100)//1000/100 = 10Mhz, this is data in this application
+	.CLK_PERIOD(1000)//1000/1000 = 1Mhz, this is data in this application
 )
 debounce_inst_send_enable
 (
-	.clk(clk_10mhz),
+	.clk(clk_slow),
 	.key(send_enable_button),//input key signal
 	.key_pulse(send_enable_pulse)//generated pulse		
 );
 
 data_gen #
 (
-	.PRBS_LENGTH(2000),
+	.PRBS_LENGTH(20000),
 	.INV_PATTERN(1),
 	.POLY_LENGHT(9),
 	.POLY_TAP(5)//these parameter decide the PRBS PATTERN
 )
 data_gen_inst
 (
-	.clk(clk_10mhz),
-	.rst(reset_sync),
+	.clk(clk_slow),
+	.rst(slow_rst),
 	.send_enable(send_enable_pulse), //begin to send a frame data
 	.data_out(data_parallel)
 );
 
 para_to_serial para_to_serial_inst(
-	.clk(clk_100mhz),
-	.rst(reset_sync),
+	.clk(clk_fast),
+	.rst(slow_rst),
 	.para_in(data_parallel),
 	.serial_out(serial_out_i)
     );
 
 assign signal_output = serial_out_i;
-assign voltage_test = 1'b1;
 //OBUFDS #( 
 //.IOSTANDARD("LVDS_25") 
 //// 指名输出端口的电平标�

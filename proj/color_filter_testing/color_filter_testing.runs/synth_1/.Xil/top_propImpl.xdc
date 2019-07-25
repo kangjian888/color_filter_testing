@@ -9,5 +9,3 @@ set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN T5 [get_ports send_enable_button]
 set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T8 [get_ports signal_output]
-set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN P26 [get_ports voltage_test]

@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a200tfbg676-2
   set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]

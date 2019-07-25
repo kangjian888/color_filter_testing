@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a200tfbg676-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,6 +35,7 @@ update_ip_catalog
 set_property ip_output_repo {c:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/clk_div.v}
   {C:/Users/KANG Jian/Desktop/color_filter_testing/src/data_gen.v}
   {C:/Users/KANG Jian/Desktop/color_filter_testing/src/debounce.v}
   {C:/Users/KANG Jian/Desktop/color_filter_testing/src/para_to_serial.v}
@@ -61,8 +63,6 @@ set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Deskto
 read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc}}
 set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc}}]
 
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
