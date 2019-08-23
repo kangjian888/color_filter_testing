@@ -1,21 +1,7 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_clk_wiz.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glb_clk_src_clk_wiz
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glb_clk_src
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/data_gen.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module data_gen
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/debounce.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module debounce
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/para_to_serial.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module para_to_serial
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/prbs_any.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PRBS_ANY
 WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [C:/Users/KANG Jian/Desktop/color_filter_testing/src/prbs_any.v:128]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/reset.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module reset
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/syn_block.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module syn_block
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/src/top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/sim/top_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/color_filter_testing/sim/data_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen_tb
