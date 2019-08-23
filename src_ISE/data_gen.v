@@ -10,7 +10,7 @@
 module data_gen #
 (
 	parameter PRBS_LENGTH = 8,//8*10bit
-	parameter INV_PATTERN = 1,
+	parameter INV_PATTERN = 0,
 	parameter POLY_LENGHT = 9,
 	parameter POLY_TAP = 5//these parameter decide the PRBS PATTERN
 )
