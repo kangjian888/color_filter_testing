@@ -13,10 +13,10 @@ module top(
 	input SYSCLK_P,
 	input G_RST,//global reset
 	input send_enable_button,
-	output voltage_test,
-	output signal_output
-	//output signal_output_p,
-	//output signal_output_n
+	//output voltage_test,
+	//output signal_output
+	output signal_output_p,
+	output signal_output_n
 );
 
 wire clk_10mhz;//inner clock wire whose frequency is 10MHz
@@ -76,14 +76,14 @@ para_to_serial para_to_serial_inst(
 	.serial_out(serial_out_i)
     );
 
-assign signal_output = serial_out_i;
-assign voltage_test = 1'b1;
-//OBUFDS #( 
-//.IOSTANDARD("LVDS_25") 
-//// 指名输出端口的电平标�
-//) OBUFDS_inst ( 
-//.O(signal_output_p), // 差分正端输出，直接连接到顶层模块端口 
-//.OB(signal_output_n), // 差分负端输出，直接连接到顶层模块端口 
-//.I(serial_out_i) // 缓冲器输�
-//); 
+//assign signal_output = serial_out_i;
+//assign voltage_test = 1'b1;
+OBUFDS #( 
+.IOSTANDARD("LVDS_25") 
+// 指名输出端口的电平标�
+) OBUFDS_inst ( 
+.O(signal_output_p), // 差分正端输出，直接连接到顶层模块端口 
+.OB(signal_output_n), // 差分负端输出，直接连接到顶层模块端口 
+.I(serial_out_i) // 缓冲器输�
+); 
 endmodule
