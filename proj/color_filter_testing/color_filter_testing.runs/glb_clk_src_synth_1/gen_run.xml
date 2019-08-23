@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="glb_clk_src_synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1563977151">
   <File Type="PA-TCL" Name="glb_clk_src.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="glb_clk_src_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="glb_clk_src_reports.tcl"/>
   <File Type="RDS-RDS" Name="glb_clk_src.vds"/>
   <File Type="RDS-UTIL" Name="glb_clk_src_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="glb_clk_src_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="glb_clk_src.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="glb_clk_src_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="glb_clk_src_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/glb_clk_src">
     <File Path="$PPRDIR/../../ips/glb_clk_src/glb_clk_src.xci">
       <FileInfo>
@@ -52,9 +49,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
