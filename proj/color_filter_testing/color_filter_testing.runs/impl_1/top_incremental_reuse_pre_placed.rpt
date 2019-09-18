@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Jul 23 16:00:17 2019
+| Date         : Mon Sep 16 21:22:21 2019
 | Host         : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command      : report_incremental_reuse -file top_incremental_reuse_pre_placed.rpt
 | Design       : top
@@ -24,9 +24,9 @@ Table of Contents
 +-------+----------------------+--------------------+--------------------+-------+
 |  Type | Matched % (of Total) | Reuse % (of Total) | Fixed % (of Total) | Total |
 +-------+----------------------+--------------------+--------------------+-------+
-| Cells |               100.00 |             100.00 |               2.94 |   170 |
-| Nets  |               100.00 |             100.00 |               0.00 |   120 |
-| Pins  |                    - |             100.00 |                  - |   508 |
+| Cells |               100.00 |             100.00 |              10.00 |    40 |
+| Nets  |               100.00 |              87.50 |               0.00 |    32 |
+| Pins  |                    - |              97.27 |                  - |   110 |
 | Ports |               100.00 |             100.00 |             100.00 |     6 |
 +-------+----------------------+--------------------+--------------------+-------+
 
@@ -34,9 +34,9 @@ Table of Contents
 2. Reference Checkpoint Information
 -----------------------------------
 
-+----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| DCP Location:  | C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp |
-+----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------+----------------------------+
@@ -44,8 +44,8 @@ Table of Contents
 +--------------------------------+----------------------------+
 | Vivado Version                 |                    v2018.3 |
 | DCP State                      |                 POST_ROUTE |
-| Recorded WNS                   |                      7.234 |
-| Recorded WHS                   |                      0.115 |
+| Recorded WNS                   |                     97.919 |
+| Recorded WHS                   |                      0.143 |
 | Reference Speed File Version   | PRODUCTION 1.23 2018-06-13 |
 | Incremental Speed File Version | PRODUCTION 1.23 2018-06-13 |
 +--------------------------------+----------------------------+
@@ -62,7 +62,7 @@ Table of Contents
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 | synth_design    |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
 | opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
-| read_checkpoint |             |             |             |     < 1 min |             |     < 1 min |
+| read_checkpoint |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 
@@ -73,8 +73,8 @@ Table of Contents
 |          Type         |   %  |
 +-----------------------+------+
 | Non-Reused Cells      | 0.00 |
-| Partially reused nets | 0.00 |
-| Non-Reused nets       | 0.00 |
+| Partially reused nets | 6.25 |
+| Non-Reused nets       | 6.25 |
 | Non-Reused Ports      | 0.00 |
 +-----------------------+------+
 

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Jul 23 16:00:23 2019
+| Date             : Mon Sep 16 21:23:48 2019
 | Host             : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.263        |
+| Total On-Chip Power (W)  | 0.298        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.124        |
-| Device Static (W)        | 0.139        |
+| Dynamic (W)              | 0.163        |
+| Device Static (W)        | 0.135        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      172 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       57 |    133800 |            0.04 |
-|   Register     |    <0.001 |       75 |    267600 |            0.03 |
-|   CARRY4       |    <0.001 |        5 |     33450 |            0.01 |
-|   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |    <0.001 |      114 |       --- |             --- |
+| Clocks         |     0.001 |        5 |       --- |             --- |
+| Slice Logic    |    <0.001 |       40 |       --- |             --- |
+|   LUT as Logic |    <0.001 |        9 |    133800 |           <0.01 |
+|   Register     |    <0.001 |       21 |    267600 |           <0.01 |
+|   Others       |     0.000 |        7 |       --- |             --- |
+| Signals        |    <0.001 |       28 |       --- |             --- |
 | PLL            |     0.119 |        1 |        10 |           10.00 |
-| I/O            |     0.004 |        6 |       400 |            1.50 |
-| Static Power   |     0.139 |          |           |                 |
-| Total          |     0.263 |          |           |                 |
+| I/O            |     0.043 |        6 |       400 |            1.50 |
+| Static Power   |     0.135 |          |           |                 |
+| Total          |     0.298 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,10 +71,10 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.044 |       0.014 |      0.030 |
+| Vccint    |       1.000 |     0.043 |       0.013 |      0.030 |
 | Vccaux    |       1.800 |     0.092 |       0.061 |      0.031 |
-| Vcco33    |       3.300 |     0.005 |       0.000 |      0.005 |
-| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.021 |       0.016 |      0.005 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
@@ -130,7 +129,6 @@ Table of Contents
 +----------------------+--------------------------------------------+-----------------+
 | SYSCLK_P             | SYSCLK_P                                   |             5.0 |
 | clk_out1_glb_clk_src | glb_clk_src_inst/inst/clk_out1_glb_clk_src |           100.0 |
-| clk_out2_glb_clk_src | glb_clk_src_inst/inst/clk_out2_glb_clk_src |            10.0 |
 | clkfbout_glb_clk_src | glb_clk_src_inst/inst/clkfbout_glb_clk_src |             5.0 |
 +----------------------+--------------------------------------------+-----------------+
 
@@ -144,7 +142,7 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| top                |     0.124 |
+| top                |     0.163 |
 |   glb_clk_src_inst |     0.122 |
 |     inst           |     0.122 |
 +--------------------+-----------+

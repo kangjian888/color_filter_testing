@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Jul 23 15:59:31 2019
+| Date         : Mon Sep 16 21:21:34 2019
 | Host         : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   57 |     0 |    134600 |  0.04 |
-|   LUT as Logic          |   57 |     0 |    134600 |  0.04 |
+| Slice LUTs*             |    8 |     0 |    134600 | <0.01 |
+|   LUT as Logic          |    8 |     0 |    134600 | <0.01 |
 |   LUT as Memory         |    0 |     0 |     46200 |  0.00 |
-| Slice Registers         |   75 |     0 |    269200 |  0.03 |
-|   Register as Flip Flop |   75 |     0 |    269200 |  0.03 |
+| Slice Registers         |   21 |     0 |    269200 | <0.01 |
+|   Register as Flip Flop |   21 |     0 |    269200 | <0.01 |
 |   Register as Latch     |    0 |     0 |    269200 |  0.00 |
 | F7 Muxes                |    0 |     0 |     67300 |  0.00 |
 | F8 Muxes                |    0 |     0 |     33650 |  0.00 |
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 19    |          Yes |         Set |            - |
-| 56    |          Yes |       Reset |            - |
+| 7     |          Yes |         Set |            - |
+| 14    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,17 +149,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   56 |        Flop & Latch |
-| LUT2     |   33 |                 LUT |
-| FDSE     |   19 |        Flop & Latch |
-| LUT3     |   13 |                 LUT |
-| LUT4     |   12 |                 LUT |
-| LUT5     |   11 |                 LUT |
-| LUT6     |    9 |                 LUT |
-| CARRY4   |    5 |          CarryLogic |
-| LUT1     |    3 |                 LUT |
-| OBUF     |    2 |                  IO |
+| FDRE     |   14 |        Flop & Latch |
+| FDSE     |    7 |        Flop & Latch |
+| LUT4     |    4 |                 LUT |
+| LUT5     |    2 |                 LUT |
+| LUT3     |    2 |                 LUT |
+| LUT2     |    2 |                 LUT |
 | IBUF     |    2 |                  IO |
+| OBUFDS   |    1 |                  IO |
+| LUT6     |    1 |                 LUT |
+| LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

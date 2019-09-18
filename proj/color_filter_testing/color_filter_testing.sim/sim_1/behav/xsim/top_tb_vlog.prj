@@ -4,7 +4,6 @@ verilog xil_defaultlib  --include "../../../../../../ips/glb_clk_src" \
 "../../../../../../ips/glb_clk_src/glb_clk_src.v" \
 "../../../../../../src/data_gen.v" \
 "../../../../../../src/debounce.v" \
-"../../../../../../src/para_to_serial.v" \
 "../../../../../../src/prbs_any.v" \
 "../../../../../../src/reset.v" \
 "../../../../../../src/syn_block.v" \

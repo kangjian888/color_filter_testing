@@ -24,7 +24,7 @@ wire clk_100mhz;
 wire dcm_locked;
 wire reset_sync;//high active
 wire send_enable_pulse;
-wire [9:0] data_parallel;
+wire data_out;
 wire serial_out_i;
 
 glb_clk_src glb_clk_src_inst
@@ -56,25 +56,24 @@ debounce_inst_send_enable
 
 data_gen #
 (
-	.PRBS_LENGTH(2000),
-	.INV_PATTERN(1),
-	.POLY_LENGHT(9),
-	.POLY_TAP(5)//these parameter decide the PRBS PATTERN
+	.INV_PATTERN(0),
+	.POLY_LENGHT(7),
+	.POLY_TAP(1)//these parameter decide the PRBS PATTERN
 )
 data_gen_inst
 (
 	.clk(clk_10mhz),
 	.rst(reset_sync),
-	.send_enable(send_enable_pulse), //begin to send a frame data
-	.data_out(data_parallel)
+	.send_enable(send_enable_button), //begin to send a frame data
+	.data_out(data_out)
 );
 
-para_to_serial para_to_serial_inst(
-	.clk(clk_100mhz),
-	.rst(reset_sync),
-	.para_in(data_parallel),
-	.serial_out(serial_out_i)
-    );
+//para_to_serial para_to_serial_inst(
+//	.clk(clk_100mhz),
+//	.rst(reset_sync),
+//	.para_in(data_parallel),
+//	.serial_out(serial_out_i)
+//    );
 
 //assign signal_output = serial_out_i;
 //assign voltage_test = 1'b1;
@@ -84,6 +83,6 @@ OBUFDS #(
 ) OBUFDS_inst ( 
 .O(signal_output_p), // 差分正端输出，直接连接到顶层模块端口 
 .OB(signal_output_n), // 差分负端输出，直接连接到顶层模块端口 
-.I(serial_out_i) // 缓冲器输�
+.I(data_out) // 缓冲器输�
 ); 
 endmodule

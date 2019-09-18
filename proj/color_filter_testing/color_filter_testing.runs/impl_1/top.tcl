@@ -65,21 +65,22 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a200tfbg676-2
   set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.xpr} [current_project]
+  set_property webtalk.parent_dir {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.cache/wt} [current_project]
+  set_property parent.project_path {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.xpr} [current_project]
   set_property ip_repo_paths V:/vivado/Arm_ipi_repository [current_project]
   update_ip_catalog
-  set_property ip_output_repo {{C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/ip}} [current_project]
+  set_property ip_output_repo {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet {{C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/synth_1/top.dcp}}
-  read_ip -quiet {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}
-  read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc}}
-  read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc}}
+  add_files -quiet {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/synth_1/top.dcp}}
+  read_ip -quiet {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src.xci}}
+  read_xdc {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_io.xdc}}
+  read_xdc {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_time.xdc}}
   link_design -top top -part xc7a200tfbg676-2
   close_msg_db -file init_design.pb
 } RESULT]
@@ -112,7 +113,7 @@ start_step place_design
 set ACTIVE_STEP place_design
 set rc [catch {
   create_msg_db place_design.pb
-  read_checkpoint -auto_incremental  -incremental {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp}
+  read_checkpoint -auto_incremental  -incremental {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp}
   catch { report_incremental_reuse -file top_incremental_reuse_pre_placed.rpt }
   if { [llength [get_debug_cores -quiet] ] > 0 }  { 
     implement_debug_core 

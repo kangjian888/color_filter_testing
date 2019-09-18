@@ -2,48 +2,48 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Jul 23 15:59:40 2019
-# Process ID: 9156
-# Current directory: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1
+# Start of session at: Mon Sep 16 21:21:43 2019
+# Process ID: 26664
+# Current directory: D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top.vdi
-# Journal file: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1\vivado.jou
+# Log file: D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1/top.vdi
+# Journal file: D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'v:/vivado/Arm_ipi_repository'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx2018.3/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx2018.3/Vivado/2018.3/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/{C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/ip} 
+Current IP cache path is D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1/{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.cache/ip} 
 Command: link_design -top top -part xc7a200tfbg676-2
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.dcp' for cell 'glb_clk_src_inst'
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-454] Reading design checkpoint 'd:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src.dcp' for cell 'glb_clk_src_inst'
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
 INFO: [Device 21-403] Loading part xc7a200tfbg676-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_board.xdc] for cell 'glb_clk_src_inst/inst'
-Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_board.xdc] for cell 'glb_clk_src_inst/inst'
-Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc] for cell 'glb_clk_src_inst/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc:57]
-get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1262.852 ; gain = 597.199
-Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc] for cell 'glb_clk_src_inst/inst'
-Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc]
-Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc]
-Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc]
-Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc]
+Parsing XDC File [d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src_board.xdc] for cell 'glb_clk_src_inst/inst'
+Finished Parsing XDC File [d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src_board.xdc] for cell 'glb_clk_src_inst/inst'
+Parsing XDC File [d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src.xdc] for cell 'glb_clk_src_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src.xdc:57]
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1338.551 ; gain = 573.160
+Finished Parsing XDC File [d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src.xdc] for cell 'glb_clk_src_inst/inst'
+Parsing XDC File [D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_io.xdc]
+Finished Parsing XDC File [D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_io.xdc]
+Parsing XDC File [D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_time.xdc]
+Finished Parsing XDC File [D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_time.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1262.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1338.551 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 12 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1262.852 ; gain = 987.922
+link_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1338.551 ; gain = 963.105
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
@@ -54,58 +54,57 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.931 . Memory (MB): peak = 1262.852 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.770 . Memory (MB): peak = 1338.551 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1749c202a
+Ending Cache Timing Information Task | Checksum: 1a9f974a2
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1278.227 ; gain = 15.375
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1355.398 ; gain = 16.848
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1749c202a
+Phase 1 Retarget | Checksum: 1a9f974a2
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1441.395 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 1749c202a
+Phase 2 Constant propagation | Checksum: 1a9f974a2
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1441.395 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 80c76165
+Phase 3 Sweep | Checksum: 14465e050
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1365.020 ; gain = 0.000
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1441.395 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1 cells
 INFO: [Opt 31-1021] In phase Sweep, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-194] Inserted BUFG glb_clk_src_inst/inst/clk_out1_glb_clk_src_BUFG_inst to drive 0 load(s) on clock net glb_clk_src_inst/inst/clk_out1_glb_clk_src_BUFG
-INFO: [Opt 31-194] Inserted BUFG glb_clk_src_inst/inst/clk_out2_glb_clk_src_BUFG_inst to drive 0 load(s) on clock net glb_clk_src_inst/inst/clk_out2_glb_clk_src_BUFG
-INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: eb665cff
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: e92c4207
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1441.395 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: c838d6d0
+Phase 5 Shift Register Optimization | Checksum: 10cdca298
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1441.395 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 13e5daf4c
+Phase 6 Post Processing Netlist | Checksum: 150a173b0
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1441.395 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -116,7 +115,7 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Retarget                     |               0  |               0  |                                              1  |
 |  Constant propagation         |               0  |               0  |                                              0  |
-|  Sweep                        |               0  |               0  |                                              1  |
+|  Sweep                        |               0  |               1  |                                              1  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               0  |                                              0  |
@@ -126,78 +125,78 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.020 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 17c39736d
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.395 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 13b7303ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 17c39736d
+Ending Power Optimization Task | Checksum: 13b7303ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 17c39736d
+Ending Final Cleanup Task | Checksum: 13b7303ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.020 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 17c39736d
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.395 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 13b7303ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.395 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-33 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+32 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.395 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1365.020 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.020 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1441.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1441.395 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_drc_opted.rpt.
 report_drc completed successfully
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp}
+Command: read_checkpoint -auto_incremental -incremental {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp}
 
 Starting Incremental read checkpoint Task
 
 Phase 1 Process Reference Checkpoint Netlist
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
 Phase 2 Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.020 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
 Phase 3 Replay Physical Synthesis Transforms
-ERROR: [Common 17-165] Too many positional options when parsing 'Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp', please type 'iphys_opt_design -help' for usage info.
+ERROR: [Common 17-165] Too many positional options when parsing 'Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp', please type 'iphys_opt_design -help' for usage info.
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
 Phase 4 Build Reuse DB
 Reading placer database...
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1365.020 ; gain = 0.000
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1365.020 ; gain = 0.000
-INFO: [Designutils 20-2297] Reference Design: C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp, Summary | WNS = 7.234 | WHS = 0.115 | State = POST_ROUTE |
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1441.395 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1441.395 ; gain = 0.000
+INFO: [Designutils 20-2297] Reference Design: D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp, Summary | WNS = 97.919 | WHS = 0.143 | State = POST_ROUTE |
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.326 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
 Phase 5 Checking legality
-Phase 5 Checking legality | Checksum: b58a30d2
+Phase 5 Checking legality | Checksum: 17906df13
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.354 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.199 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
 Phase 6 Reporting
 
@@ -216,9 +215,9 @@ Table of Contents
 +-------+----------------------+--------------------+--------------------+-------+
 |  Type | Matched % (of Total) | Reuse % (of Total) | Fixed % (of Total) | Total |
 +-------+----------------------+--------------------+--------------------+-------+
-| Cells |               100.00 |             100.00 |               2.94 |   170 |
-| Nets  |               100.00 |             100.00 |               0.00 |   120 |
-| Pins  |                    - |             100.00 |                  - |   508 |
+| Cells |               100.00 |             100.00 |              10.00 |    40 |
+| Nets  |               100.00 |              87.50 |               0.00 |    32 |
+| Pins  |                    - |              97.27 |                  - |   110 |
 | Ports |               100.00 |             100.00 |             100.00 |     6 |
 +-------+----------------------+--------------------+--------------------+-------+
 
@@ -226,9 +225,9 @@ Table of Contents
 2. Reference Checkpoint Information
 -----------------------------------
 
-+----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| DCP Location:  | C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp |
-+----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------+----------------------------+
@@ -236,8 +235,8 @@ Table of Contents
 +--------------------------------+----------------------------+
 | Vivado Version                 |                    v2018.3 |
 | DCP State                      |                 POST_ROUTE |
-| Recorded WNS                   |                      7.234 |
-| Recorded WHS                   |                      0.115 |
+| Recorded WNS                   |                     97.919 |
+| Recorded WHS                   |                      0.143 |
 | Reference Speed File Version   | PRODUCTION 1.23 2018-06-13 |
 | Incremental Speed File Version | PRODUCTION 1.23 2018-06-13 |
 +--------------------------------+----------------------------+
@@ -254,7 +253,7 @@ Table of Contents
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 | synth_design    |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
 | opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
-| read_checkpoint |             |             |             |             |             |             |
+| read_checkpoint |             |             |     < 1 min |             |     < 1 min |             |
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 
@@ -265,31 +264,178 @@ Table of Contents
 |          Type         |   %  |
 +-----------------------+------+
 | Non-Reused Cells      | 0.00 |
-| Partially reused nets | 0.00 |
-| Non-Reused nets       | 0.00 |
+| Partially reused nets | 6.25 |
+| Non-Reused nets       | 6.25 |
 | Non-Reused Ports      | 0.00 |
 +-----------------------+------+
 
 
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.360 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.206 . Memory (MB): peak = 1441.395 ; gain = 0.000
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.364 . Memory (MB): peak = 1365.020 ; gain = 0.000
-INFO: [Vivado_Tcl 4-115] Reporting incremental reuse summary using design-checkpoint file 'C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp'
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 1441.395 ; gain = 0.000
+INFO: [Vivado_Tcl 4-115] Reporting incremental reuse summary using design-checkpoint file 'D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp'
 
 Starting Report Incremental Reuse Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1365.020 ; gain = 0.000
-report_incremental_reuse: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1441.395 ; gain = 0.000
+report_incremental_reuse: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1441.395 ; gain = 0.000
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
 
 Starting Incremental Placer Task
-INFO: [Vivado_Tcl 4-24] Running Incremental Placer flow for unplaced cells using reference design-checkpoint 'C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp'.
+INFO: [Vivado_Tcl 4-24] Running Incremental Placer flow for unplaced cells using reference design-checkpoint 'D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp'.
 INFO: [Place 46-42] Incremental Compile is being run in High Reuse Mode.
 INFO: [Place 46-44] place_design is using directive Default with target WNS of 0 ns.
-INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.395 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 17906df13
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1441.395 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17906df13
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1441.395 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 255ac9dfd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1441.395 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 255ac9dfd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1441.395 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 255ac9dfd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1441.395 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 234dfa105
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1441.543 ; gain = 0.148
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.141 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 1e0e59cc7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+Phase 2 Global Placement | Checksum: 22971f401
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 22971f401
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 22971f401
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+
+Phase 3.3 Place Remaining
+Phase 3.3 Place Remaining | Checksum: 22971f401
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+Phase 3 Detail Placement | Checksum: 2514ab6cd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 194cff236
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-46] BUFG insertion identified 0 candidate nets, 0 success, 0 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 194cff236
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+INFO: [Place 30-746] Post Placement Timing Summary WNS=97.920. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1d1ec27d7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+Phase 4.1 Post Commit Optimization | Checksum: 1d1ec27d7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1d1ec27d7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+
+Phase 4.3 Sweep Clock Roots: Post-Placement
+Phase 4.3 Sweep Clock Roots: Post-Placement | Checksum: 1d1ec27d7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: 1d1ec27d7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+
+Phase 4.5 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.141 ; gain = 0.000
+Phase 4.5 Final Placement Cleanup | Checksum: 22797f09a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 22797f09a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
+INFO: [Place 46-3] During incremental compilation, routing data from the original checkpoint is applied during place_design. As a result, dangling route segments and route conflicts may appear in the post place_design implementation due to changes between the original and incremental netlists. These routes can be ignored as they will be subsequently resolved by route_design. This issue will be cleaned up automatically in place_design in a future software release.
+
++-------------------------------------------------------------------------------+
+|Incremental Placement Summary                                                  |
++-------------------------------------------------------------------------------+
+|                          Type                           | Count  | Percentage |
++-------------------------------------------------------------------------------+
+|  Total instances                                        |     40 |     100.00 |
+|  Reused instances                                       |     40 |     100.00 |
+|  Non-reused instances                                   |      0 |       0.00 |
++-------------------------------------------------------------------------------+
+|Incremental Placement Runtime Summary                                          |
++-------------------------------------------------------------------------------+
+|  Initialization time(elapsed secs)                                   |   1.29 |
+|  Incremental Placer time(elapsed secs)                               |   0.41 |
++-------------------------------------------------------------------------------+
 
 Reference - Incremental Comparison Summary
 
@@ -303,31 +449,31 @@ Reference - Incremental Comparison Summary
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 | synth_design    |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
 | opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
-| read_checkpoint |             |             |             |     < 1 min |             |     < 1 min |
-| place_design    |       7.982 |       7.234 |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| read_checkpoint |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| place_design    |      97.572 |      97.920 |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 
-Ending Incremental Placer Task | Checksum: b58a30d2
+Ending Incremental Placer Task | Checksum: 14560fb02
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.141 ; gain = 5.746
 INFO: [Common 17-83] Releasing license: Implementation
-49 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
+59 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
 place_design completed successfully
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.141 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1365.020 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.020 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_placed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1447.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1449.395 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 1365.020 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1449.395 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1365.020 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1449.395 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
@@ -335,6 +481,170 @@ Running DRC as a precondition to command route_design
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Starting Incremental Route Task
+Checksum: PlaceDB: a6cdadae ConstDB: 0 ShapeSum: 9e934d54 RouteDB: 4f0e70ac
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 454ab6fc
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:19 . Memory (MB): peak = 1686.445 ; gain = 237.051
+Post Restoration Checksum: NetGraph: d05929ef NumContArr: 867f82eb Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 156d8acda
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:19 . Memory (MB): peak = 1706.246 ; gain = 256.852
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 156d8acda
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:19 . Memory (MB): peak = 1714.402 ; gain = 265.008
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 5f0c5117
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:19 . Memory (MB): peak = 1714.402 ; gain = 265.008
+--------------------------------------------------------
+|Incremental Routing Reuse Summary                      |
+--------------------------------------------------------
+|Type                     | Count    | Percentage       |
+--------------------------------------------------------
+|Fully reused nets        |        27|            93.10 |
+|Partially reused nets    |         2|             6.90 |
+|Non-reused nets          |         0|             0.00 |
+--------------------------------------------------------
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: b87b9260
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:20 . Memory (MB): peak = 1726.293 ; gain = 276.898
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=97.835 | TNS=0.000  | WHS=-0.115 | THS=-1.130 |
+
+Phase 2 Router Initialization | Checksum: 100899b86
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:20 . Memory (MB): peak = 1726.293 ; gain = 276.898
+
+Phase 3 Initial Routing
+ Number of Nodes with overlaps = 0
+Phase 3 Initial Routing | Checksum: 10d9ae5ed
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 4 Initial Route for Timing
+
+Phase 4.1 Update Timing
+Phase 4.1 Update Timing | Checksum: 10d9ae5ed
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=97.835 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4 Initial Route for Timing | Checksum: 10d9ae5ed
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=97.835 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 10d9ae5ed
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+Phase 5 Rip-up And Reroute | Checksum: 10d9ae5ed
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 10d9ae5ed
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 10d9ae5ed
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+Phase 6 Delay and Skew Optimization | Checksum: 10d9ae5ed
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+
+Phase 7.1.1 Update Timing
+Phase 7.1.1 Update Timing | Checksum: 1a202e325
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=97.917 | TNS=0.000  | WHS=0.141  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1a202e325
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+Phase 7 Post Hold Fix | Checksum: 1a202e325
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0024294 %
+  Global Horizontal Routing Utilization  = 0.000826173 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 1a202e325
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1a202e325
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 25dbf0bd6
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=97.917 | TNS=0.000  | WHS=0.141  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 25dbf0bd6
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+--------------------------------------------------------
+|Incremental Routing Reuse Summary                      |
+--------------------------------------------------------
+|Type                     | Count    | Percentage       |
+--------------------------------------------------------
+|Fully reused nets        |        27|            93.10 |
+|Partially reused nets    |         2|             6.90 |
+|Non-reused nets          |         0|             0.00 |
+--------------------------------------------------------
+INFO: [Route 35-16] Router Completed Successfully
+Ending Incremental Route Task | Checksum: 25dbf0bd6
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:20 . Memory (MB): peak = 1731.238 ; gain = 281.844
+------------------------------------
+Incremental Router Runtime Summary: 
+------------------------------------
+   Initialization time: 79.863 Secs
+   Incremental Router time: 0.378 Secs
 
 Reference - Incremental Comparison Summary
 
@@ -348,35 +658,36 @@ Reference - Incremental Comparison Summary
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 | synth_design    |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
 | opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
-| read_checkpoint |             |             |             |     < 1 min |             |     < 1 min |
-| place_design    |       7.982 |       7.234 |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
-| route_design    |       7.234 |       7.234 |       00:01 |     < 1 min |       00:01 |     < 1 min |
+| read_checkpoint |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| place_design    |      97.572 |      97.920 |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| route_design    |      97.919 |      97.917 |       00:01 |       00:01 |       00:01 |       00:01 |
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 
 INFO: [Common 17-83] Releasing license: Implementation
-59 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
+77 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
 route_design completed successfully
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.020 ; gain = 0.000
+route_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:21 . Memory (MB): peak = 1731.238 ; gain = 281.844
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1731.238 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1365.020 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.020 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1731.238 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1731.238 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_drc_routed.rpt.
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.runs/impl_1/top_methodology_drc_routed.rpt.
 report_methodology completed successfully
 INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
@@ -384,19 +695,19 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-71 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
+89 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
-INFO: [Vivado_Tcl 4-115] Reporting incremental reuse summary using design-checkpoint file 'C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp'
+INFO: [Vivado_Tcl 4-115] Reporting incremental reuse summary using design-checkpoint file 'D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.srcs/utils_1/imports/impl_1/top_routed.dcp'
 
 Starting Report Incremental Reuse Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1409.672 ; gain = 0.000
-report_incremental_reuse: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1409.672 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1741.234 ; gain = 0.000
+report_incremental_reuse: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1741.234 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
@@ -421,7 +732,7 @@ Writing bitstream ./top.bin...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-90 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
+108 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1913.695 ; gain = 504.023
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 16:00:53 2019...
+write_bitstream: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 2228.715 ; gain = 487.480
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 16 21:24:18 2019...

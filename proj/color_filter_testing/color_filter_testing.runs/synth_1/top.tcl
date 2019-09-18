@@ -17,35 +17,35 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a200tfbg676-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.xpr} [current_project]
+set_property webtalk.parent_dir {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.cache/wt} [current_project]
+set_property parent.project_path {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.xpr} [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
 set_property ip_repo_paths v:/vivado/Arm_ipi_repository [current_project]
 update_ip_catalog
-set_property ip_output_repo {c:/Users/KANG Jian/Desktop/color_filter_testing/proj/color_filter_testing/color_filter_testing.cache/ip} [current_project]
+set_property ip_output_repo {d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/proj/color_filter_testing/color_filter_testing.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/data_gen.v}
-  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/debounce.v}
-  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/para_to_serial.v}
-  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/prbs_any.v}
-  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/reset.v}
-  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/syn_block.v}
-  {C:/Users/KANG Jian/Desktop/color_filter_testing/src/top.v}
+  {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/src/data_gen.v}
+  {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/src/debounce.v}
+  {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/src/prbs_any.v}
+  {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/src/reset.v}
+  {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/src/syn_block.v}
+  {D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/src/top.v}
 }
-read_ip -quiet {{C:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/KANG Jian/Desktop/color_filter_testing/ips/glb_clk_src/glb_clk_src_ooc.xdc}}]
+read_ip -quiet {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src.xci}}
+set_property used_in_implementation false [get_files -all {{d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/ips/glb_clk_src/glb_clk_src_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -55,11 +55,11 @@ set_property used_in_implementation false [get_files -all {{c:/Users/KANG Jian/D
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_io.xdc}}]
+read_xdc {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_io.xdc}}
+set_property used_in_implementation false [get_files {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_io.xdc}}]
 
-read_xdc {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/color_filter_testing/cons/top_time.xdc}}]
+read_xdc {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_time.xdc}}
+set_property used_in_implementation false [get_files {{D:/OneDrive - HKUST Connect/Lab/color_filter_testing_FAST_VSRSION/cons/top_time.xdc}}]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
